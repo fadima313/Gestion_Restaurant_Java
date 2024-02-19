@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="483.0" prefWidth="835.0" styleClass="white-bg" stylesheets="@MainFormDesigner.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.controller.AuthUIController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+      <ImageView fitHeight="539.0" fitWidth="380.0" layoutX="5.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/PRise_Comm2.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="382.0" prefHeight="483.0" prefWidth="453.0" style="-fx-background-color: #EC5A5A;">
+         <children>
+            <Label layoutX="103.0" layoutY="36.0" text="CONNECTEZ-VOUS" textFill="#fbf7f7">
+               <font>
+                  <Font name="Cooper Black" size="24.0" />
+               </font>
+            </Label>
+            <GridPane layoutX="25.0" layoutY="124.0" prefHeight="200.0" prefWidth="417.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="LOGIN">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="PASSWORD" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtLogin" prefHeight="52.0" prefWidth="219.0" promptText="Entrez votre login" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <PasswordField fx:id="txtPassword" prefHeight="50.0" prefWidth="323.0" promptText="**********" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </GridPane.margin>
+                  </PasswordField>
+               </children>
+            </GridPane>
+            <Button fx:id="btnConnexion" layoutX="44.0" layoutY="397.0" mnemonicParsing="false" onAction="#handleClickedConnexion" prefHeight="27.0" prefWidth="133.0" style="-fx-background-color: #F5F5F5;" styleClass="btnauth" text="Connexion">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnRetour" layoutX="276.0" layoutY="397.0" mnemonicParsing="false" onAction="#handleClickedRetour" prefHeight="43.0" prefWidth="133.0" style="-fx-background-color: #F5F5F5;" styleClass="btnauth" text="Retour">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

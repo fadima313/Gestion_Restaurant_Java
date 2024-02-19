@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="513.0" prefWidth="831.0" style="-fx-background-color: #EC5A5A;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.controller.LaunchController">
+   <children>
+      <AnchorPane layoutX="196.0" layoutY="14.0" prefHeight="514.0" prefWidth="635.0">
+         <children>
+            <ImageView fitHeight="542.0" fitWidth="930.0" layoutX="-298.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/Lancement_Appli.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="lancement" layoutX="59.0" layoutY="421.0" mnemonicParsing="false" onAction="#onLancementClick" prefHeight="25.0" prefWidth="215.0" text="Lancer l'application" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
